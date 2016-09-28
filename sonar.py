@@ -23,7 +23,7 @@ while GPIO.input(ECHO)==0:
   pulse_start = time.time()
 
 while GPIO.input(ECHO)==1:
-  pulse_end = time.time()
+  pulse_end = time()
 
 pulse_duration = pulse_end - pulse_start
 distance = pulse_duration * 17150
