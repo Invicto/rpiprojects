@@ -20,7 +20,7 @@ sleep(0.00001)
 GPIO.output(TRIG, False)
 
 while GPIO.input(ECHO)==0:
-  pulse_start = time.time()
+  pulse_start = time()
 
 while GPIO.input(ECHO)==1:
   pulse_end = time()
