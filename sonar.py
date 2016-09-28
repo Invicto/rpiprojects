@@ -3,7 +3,7 @@ from time import sleep
  
 GPIO.setmode(GPIO.BOARD)
  
-TRIG = 7
+TRIG = 15
 ECHO = 11
  
 print "Distance Measurement In Progress"
