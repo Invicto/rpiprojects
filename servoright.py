@@ -5,11 +5,11 @@ GPIO.setup(12, GPIO.OUT)
 
 p = GPIO.PWM(12, 50)  # channel=12 frequency=50Hz
 
-#full left
-print "full left"
+#full right
+print "full right"
 p.start(5)
 sleep(1)
-p.ChangeDutyCycle(4.5)
+p.ChangeDutyCycle(2)
 sleep(1)
 p.stop()
 GPIO.cleanup()
